@@ -1,0 +1,22 @@
+<div id="spree-header">
+
+  <header id="header" data-hook>
+    <div class="container navcontainer">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+             <%= image_tag("logo.png", :alt => "Detox Water Logo", :class=> "navimage") %>
+                    <a href="http://www.detoxwater.com" class="titleheader">Detox Water</a>
+                </div>
+        <%= render :partial => 'spree/shared/nav_bar' %>
+            </nav>
+    </div>
+  </header>
+
+</div>

@@ -1,0 +1,13 @@
+<% unless @product_properties.empty? %>  
+  <table id="product-properties" class="table" data-hook>
+    <tbody>
+      <% @product_properties.each do |product_property| %>
+        <% css_class = cycle('even', 'odd', :name => "properties") %>
+        <tr class="<%= css_class %>">
+          <td><%= product_property.value %></td>
+        </tr>
+      <% end %>
+      <% reset_cycle('properties') %>
+    </tbody>
+  </table>
+<% end %>

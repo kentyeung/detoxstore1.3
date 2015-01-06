@@ -1,0 +1,397 @@
+//Add your custom bootstrap variables here, see https://github.com/twbs/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_variables.scss for full list of variables.
+
+$icon-font-path: "../../bootstrap/";
+@import "bootstrap";
+
+body{
+    background-color: #F6EFD2;
+    font-size: 14px;
+    line-height: 200%;
+    font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 500; font-style: normal;
+}
+h1{
+    font-family: 'Sentinel SSm A', 'Sentinel SSm B'; font-weight: 800; font-style: normal;
+}
+h3{
+    text-transform: capitalize;
+}
+h5{
+    font-size:1.2em;
+}
+a{
+    color: #C46E56;
+}
+// -- Spree Custom Header and Footer ---------------------
+#spree-header {
+  background-size: cover;
+    background-color: #4A2F40;
+    height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  #logo {
+color: #F6EFD2;
+  }
+  .nav a {
+    color: #F6EFD2;
+    &:hover {
+      background:rgba(9, 22, 33, 0);
+      text-decoration: underline;
+    }
+  }
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+      padding-top: 6px;
+  }
+}
+#spree-footer {
+  background: $gray-dark;
+  padding-top: $padding-base-horizontal;
+  margin-top: $line-height-computed;
+  color: #fff;
+}
+.btn{
+    border-radius: 0px;
+    border: 2px solid;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+.btn-success{
+    border-color: #3EB17C;
+    color:#3EB17C;
+}
+.btn-primary{
+    border-color: #C46E56;
+    color:#C46E56;
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+.table > thead > tr > th{
+    text-align: center;
+}
+
+.panel-title{
+    text-align: center;
+}
+
+.panel-heading{
+    background-color: #4B2F40 !important;
+    color: #F6EFD1 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.panel-body{
+    background-color: #FAF6E3;
+    border-bottom: 1px solid #DBD5BA;
+    border-left: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 30px;
+}
+
+.panel-default{
+    border-color: none;
+}
+.panel{
+    background-color:none;
+    border: none;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+    background-color: #C66E53;
+    color: #F6EFD1;
+    text-transform: uppercase;
+}
+.nav-pills > li > a{
+    color: black;
+    text-transform: uppercase;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+    margin-top:8px;
+}
+.progress-steps{
+    margin: 0px !important;
+    
+}
+.nav-justified, .nav-tabs.nav-justified{
+    width: 60%;
+    float: right;
+}
+// -- Spree Layout Custom Rules -------------------------
+
+//TODO, bug #6
+.alert-error, .alert-registration_error { @extend .alert-danger; }
+.alert-alert { @extend .alert-info; }
+.alert-notice { @extend .alert-info; }
+
+.product-body {
+  height: 170px;
+}
+.progress-steps {
+  margin-top: $line-height-computed;
+}
+h1 {
+  margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+h6{
+    margin-bottom: 0px;
+}
+// -- Product --
+#product-description {
+    margin-top: 65px;
+}
+.product-center{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#product-properties td{
+    border-top: none;
+    padding: 0px;
+    color: #c46E56;
+    font-size: 0.9em;
+}
+
+#quantity {
+    width: 50px;
+}
+#add-to-cart-button{
+    margin-top: 39px;
+    text-transform: uppercase;
+}
+
+#product-price{
+    padding-left: 0px;
+}
+.selling{
+    font-size: 3em;
+}
+#inside-product-cart-form{
+    text-transform: uppercase;
+}
+.product-title{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+th{
+    background-color: #4A2F40 !important;
+    color: #F6EFD2;
+    text-transform: uppercase;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-size: 0.9em;
+    border-bottom: 0px !important;
+}
+
+.line_item_quantity{
+    width: 50px;
+}
+
+#line_items{
+    background-color: #FAF6E4;
+    border-left: 1px solid #DBD5BA;
+border-right: 1px solid #DBD5BA;
+}
+#cart_total{
+    border-top: 1px solid #DCD6BD;
+}
+#cart_total td{
+    background-color: #EEEAD8;
+    padding-top: 30px;
+padding-bottom: 30px;
+}
+.bottom_cart{
+        background-color: #4A2F40;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -moz-border-image: asset-url('border.png') 30 30 round;
+    -webkit-border-image: asset-url('border.png') 30 30 round;
+    border-image: asset-url('border.png') 30 30 round;
+    border-bottom:0;
+    border-left:0;
+    border-right:0;
+        border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;;
+}
+
+#cart-detail{
+    margin-bottom: 0px;
+}
+#checkout-link{
+    margin-left: 20px;
+}
+#update-button{
+    margin-left: 10px;
+}
+.cart-total{
+    border-left: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
+}
+.cart-item-price{
+    text-align:center;
+}
+.cart-item-quantity{
+    text-align:center;
+}
+.cart-item-total{
+    text-align:center;
+}
+.cart-item-delete{
+    padding-right: 20px !important;
+}
+.cart-item-image{
+    padding-left: 50px !important;
+}
+.text-primary{
+    color: black;
+}
+.lead{
+    font-size: 1.6em;
+    font-family: 'Sentinel SSm A', 'Sentinel SSm B'; font-weight: 800; font-style: normal;
+}
+.order_summary{
+    margin-bottom: 0px;
+}
+.order_summary td{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 30px !important;
+}
+.panel-summary{
+    padding: 0px !important;
+}
+.item-total{
+    
+}
+.total-order{
+    background-color: #EEEAD7;
+}
+#total-cart{
+    text-align: center;
+}
+th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+th:only-child{
+    border-radius: 3px 3px 0 0;
+}
+#cart-table{
+    margin-bottom: 20px;
+}
+.product-section-title{
+    margin-bottom: 10px
+}
+.checkout-well{
+    background-color: #4B2F40;
+    color: #F6EFD2;
+}
+.list-group-item{
+    background-color: transparent;
+    border:none;
+}
+.cartadjustments{
+    border-top:none !important;
+}
+#cart_adjustments{
+    background-color: #FAF6E4;
+    border-left: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
+}
+.order-number{
+    text-align: center;
+}
+.order-date{
+    text-align: center;
+}
+.order-shipment-state{
+    text-align: center;
+}
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th{
+    background-color: #FAF6E4;
+}
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th{
+    background-color: #EEEAD8;
+}
+.order-summary > tbody > tr > td{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.icon-bar{
+    background-color: #F3ECD0;
+}
+.navbar-collapse.in{
+    background-color: #4A2F40;
+    border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.product-body{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+    border-top: 1px solid #DBD5BA;
+    border-left: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
+}
+.panel-footer{
+    background-color: #4A2F40;
+}
+.productprice{
+    color: #F9F5E2;
+}
+.paymentwell{
+    background-color: #EEEAD7;
+    border: none;
+} 
+.navcontainer{
+    width: 100%;
+}
+
+.titleheader{
+    font-size: 1.3em;
+    color: #EEEAD7;
+margin-top: 9px;
+display: inline-block;
+}
+
+.order_details_line_item{
+    background-color: #FAF6E3;
+}
+#subtotal{
+    background-color: #EBE7D1;
+}
+#tax-adjustments{
+    background-color: #EBE7D1;
+}
+#order-charges{
+    background-color: #EBE7D1;
+}
+#shipment-total{
+    background-color: #EBE7D1;
+}
+#minicart{
+    background-color: #FAF6E3 !important;
+}
+#minicart a{
+    color:#C46E56 !important;
+}
+ul#minicart-items li {
+width: auto !important;
+text-align: left !important;
+}
