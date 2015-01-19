@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: git://github.com/kentyeung/spree-subscribe.git
-  revision: 6a86c89424634832ce936768489c2adb576e8d67
-  branch: patch-1
+  revision: 4b418b4ec5e83fd2dc598857def69f8d6b5ca595
+  branch: master
   specs:
     spree_subscribe (0.1.0.beta)
       spree_core (~> 2.3.0)
