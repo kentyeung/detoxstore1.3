@@ -12,8 +12,8 @@
         <span class="icon-bar"></span>
       </button>
              <%= image_tag("logo.png", :alt => "Detox Water Logo", :class=> "navimage") %>
-                    <a href="http://www.detoxwater.com" class="titleheader">Detox Water</a>
-                </div>
+                    <%= link_to Spree.t(:DETOXWATER), spree.root_path %>
+            </div>
         <%= render :partial => 'spree/shared/nav_bar' %>
             </nav>
     </div>

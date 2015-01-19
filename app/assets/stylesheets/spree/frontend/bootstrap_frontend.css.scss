@@ -22,6 +22,11 @@ h5{
 a{
     color: #C46E56;
 }
+a:hover{
+    color:#C46E56;
+    text-decoration: underline;
+    
+}
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
   background-size: cover;
@@ -146,6 +151,10 @@ h6{
     margin-bottom: 0px;
 }
 // -- Product --
+#spree-footer{
+    background: #4A2F40;
+    margin-top: 75px;
+}
 #product-description {
     margin-top: 100px;
 }
@@ -370,7 +379,13 @@ border-bottom-right-radius: 4px;
 margin-top: 9px;
 display: inline-block;
 }
-
+.navbar-header{
+        font-size: 1.3em;
+    color: #EEEAD7 !important;
+}
+.navbar-header a{
+        color: #EEEAD7 !important;
+}
 .order_details_line_item{
     background-color: #FAF6E3;
 }
