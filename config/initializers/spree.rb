@@ -29,8 +29,8 @@ Spree.config do |config|
                               styles: {
       mini:     "48x48>",
       small:    "300x300>",
-      product:  "1024x768>",
-      large:    "600x600>"
+      product:  "350x768>",
+      large:    "1024x1024>"
   },
         
   path:           "/spree/:class/:id/:style/:basename.:extension",
