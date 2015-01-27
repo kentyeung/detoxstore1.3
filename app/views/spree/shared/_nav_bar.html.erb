@@ -1,11 +1,13 @@
 <div class="navbar-collapse collapse" id="navbar-collapse">
-  <ul class="nav navbar-nav navbar-right" data-hook>
+  <ul class="nav navbar-nav navbar-right" id="rightnav" data-hook>
     <li id="search-bar" data-hook>
 <% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
 <%= form_tag spree.products_path, :method => :get, class: "navbar-form" do %>
 <% end %>
     </li>
+      <div id="link-to-cart">
     <li id="link-to-cart" data-hook><%= image_tag("cart.png", :alt => "Detox Water Logo", :class=> "navimage") %><%= link_to_cart %></li>
       <%= render :partial => 'spree/shared/minicart' %>
+          </div>
   </ul>
 </div>
