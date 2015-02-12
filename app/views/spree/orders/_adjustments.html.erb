@@ -12,7 +12,7 @@
   <% @order.shipments.each do |shipment| %>
     <tr class="adjustment">
       <td colspan="4" class="cartadjustments" align='right'><h5><%= Spree.t(:shipping) %>: <%= shipment.shipping_method.name %></h5></td>
-      <td colspan class="cartadjustments panel-title">
+      <td colspan class="cartadjustments panel-title lead">
         <h5><%= shipment.display_discounted_cost %></h5>
       </td>
         <td class="cartadjustments"></td>
