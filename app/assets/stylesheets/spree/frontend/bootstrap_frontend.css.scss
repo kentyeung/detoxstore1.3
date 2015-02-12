@@ -51,10 +51,10 @@ color: #F6EFD2;
   }
 }
 #spree-footer {
-  background: $gray-dark;
   padding-top: $padding-base-horizontal;
   margin-top: $line-height-computed;
   color: #fff;
+    box-shadow: 0px 500px 0px 500px #4A2F40;
 }
 .btn{
     border-radius: 0px;
@@ -198,8 +198,13 @@ h6{
     text-transform: uppercase;
 }
 .product-title{
+    font-family: 'Knockout 30 A', 'Knockout 30 B';
+    font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 6em;
+    color: #4A2F40;
+    
 }
 th{
     background-color: #4A2F40 !important;
@@ -454,4 +459,12 @@ margin-left: -20px;
 .adjustment td{
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+}
+
+.info{
+    font-size:2em;
+        font-family: 'Knockout 30 A', 'Knockout 30 B';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
 }
