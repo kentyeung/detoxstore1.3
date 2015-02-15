@@ -5,7 +5,7 @@ $icon-font-path: "../../bootstrap/";
 @import "bootstrap";
 
 body{
-    background-color: #F6EFD2;
+    background-color: #F4F4F4;
     font-size: 1.2em;
     line-height: 200%;
     font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 500; font-style: normal;
@@ -31,7 +31,6 @@ a:hover{
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
   background-size: cover;
-    background-color: #4A2F40;
     height: 60px;
     text-transform: uppercase;
     margin-bottom: 100px;
@@ -39,7 +38,7 @@ a:hover{
 color: #F6EFD2;
   }
   .nav a {
-    color: #F6EFD2;
+    color: #3E323B;
     &:hover {
       background:rgba(9, 22, 33, 0);
       text-decoration: underline;
@@ -54,8 +53,8 @@ color: #F6EFD2;
 #spree-footer {
   padding-top: $padding-base-horizontal;
   margin-top: $line-height-computed;
-  color: #fff;
-    box-shadow: 0px 500px 0px 500px #4A2F40;
+  color: #3E323B;
+    //box-shadow: 0px 500px 0px 500px #4A2F40;
 }
 .btn{
     border-radius: 0px;
@@ -73,6 +72,12 @@ color: #F6EFD2;
     border-color: #C46E56;
     color:#C46E56;
 }
+
+.btn-primary:hover{
+    background-color: #C46E56;
+    color: #FFFFFF;
+    border-color: #9a5441;
+}
 .table > tbody > tr > td{
     vertical-align: middle;
 }
@@ -85,18 +90,18 @@ color: #F6EFD2;
 }
 
 .panel-heading{
-    background-color: #4B2F40 !important;
-    color: #F6EFD1 !important;
+    background-color: #3E323B !important;
+    color: #F4F4F4 !important;
     padding-top: 20px;
     padding-bottom: 20px;
     text-transform: uppercase;
 }
 
 .panel-body{
-    background-color: #FAF6E3;
-    border-bottom: 1px solid #DBD5BA;
-    border-left: 1px solid #DBD5BA;
-    border-right: 1px solid #DBD5BA;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 30px;
@@ -111,14 +116,14 @@ color: #F6EFD2;
 }
 
 .table > tbody + tbody{
-    border-top: 1px solid #DBD5BA;
+    border-top: 1px solid #E6E6E6;
 }
  .table > tbody > tr > td{
      border-top: none;
  }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
-    background-color: #C66E53;
-    color: #F6EFD1;
+    background-color: #1BB289;
+    color: #F7F7F7;
     text-transform: uppercase;
 }
 .nav-pills > li > a{
@@ -160,7 +165,7 @@ h6{
 }
 // -- Product --
 #spree-footer{
-    background: #4A2F40;
+    //background: #4A2F40;
     margin-top: 75px;
     width: 100%;
 }
@@ -172,10 +177,14 @@ h6{
 }
 
 #product-properties td{
+    font-family: 'Knockout 30 A', 'Knockout 30 B';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
     border-top: none;
     padding: 0px;
     color: #c46E56;
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
 #quantity {
@@ -203,13 +212,13 @@ h6{
     font-style: normal;
     text-transform: uppercase;
     font-size: 6em;
-    color: #4A2F40;
+    color: #3E323B;
     margin-bottom: 0px;
     
 }
 th{
-    background-color: #4A2F40 !important;
-    color: #F6EFD2;
+    background-color: #3E323B !important;
+    color: #F4F4F4;
     text-transform: uppercase;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
@@ -228,18 +237,18 @@ th{
 }
 
 #line_items{
-    background-color: #FAF6E4;
-    border-left: 1px solid #DBD5BA;
-border-right: 1px solid #DBD5BA;
+    background-color: #FFFFFF;
+    border-left: 1px solid #E6E6E6;
+border-right: 1px solid #E6E6E6;
 }
 
 #cart_total td{
-    background-color: #EEEAD8;
+    background-color: #F4F4F4;
     padding-top: 30px;
 padding-bottom: 30px;
 }
 .bottom_cart{
-        background-color: #4A2F40;
+        background-color: #3E323B;
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 30px;
@@ -264,8 +273,8 @@ border-bottom-right-radius: 5px;
     margin-left: 10px;
 }
 .cart-total{
-    border-left: 1px solid #DBD5BA;
-    border-right: 1px solid #DBD5BA;
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
 }
 .cart-item-price{
     text-align:center;
@@ -303,7 +312,7 @@ border-bottom-right-radius: 5px;
     
 }
 .total-order{
-    background-color: #EEEAD7;
+    background-color: #F7F7F7;
 }
 #total-cart{
     text-align: center;
@@ -326,7 +335,7 @@ th:only-child{
     margin-bottom: 10px
 }
 .checkout-well{
-    background-color: #4B2F40;
+    background-color: #3E323B;
     color: #F6EFD2;
 }
 .list-group-item{
@@ -337,9 +346,9 @@ th:only-child{
     border-top:none !important;
 }
 #cart_adjustments{
-    background-color: #FAF6E4;
-    border-left: 1px solid #DBD5BA;
-    border-right: 1px solid #DBD5BA;
+    background-color: #FFFFFF;
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
 }
 .order-number{
     text-align: center;
@@ -351,10 +360,10 @@ th:only-child{
     text-align: center;
 }
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th{
-    background-color: #FAF6E4;
+    background-color: #FFFFFF;
 }
 .table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th{
-    background-color: #EEEAD8;
+    background-color: #F7F7F7;
 }
 .order-summary > tbody > tr > td{
     padding-top: 30px;
@@ -364,7 +373,7 @@ th:only-child{
     background-color: #F3ECD0;
 }
 .navbar-collapse.in{
-    background-color: #4A2F40;
+    background-color: #3E323B;
     border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 }
@@ -374,18 +383,18 @@ border-bottom-right-radius: 5px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom: none;
-    border-top: 1px solid #DBD5BA;
-    border-left: 1px solid #DBD5BA;
-    border-right: 1px solid #DBD5BA;
+    border-top: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
 }
 .panel-footer{
-    background-color: #4A2F40;
+    background-color: #3E323B;
 }
 .productprice{
     color: #F9F5E2;
 }
 .paymentwell{
-    background-color: #EEEAD7;
+    background-color: #F7F7F7;
     border: none;
 } 
 .navcontainer{
@@ -394,33 +403,33 @@ border-bottom-right-radius: 5px;
 
 .titleheader{
     font-size: 1.3em;
-    color: #EEEAD7;
+    color: #F7F7F7;
 margin-top: 9px;
 display: inline-block;
 }
 .navbar-header{
-    color: #EEEAD7 !important;
+    color: #3E323B !important;
 }
 .navbar-header a{
-        color: #EEEAD7 !important;
+        color: #3E323B !important;
 }
 .order_details_line_item{
-    background-color: #FAF6E3;
+    background-color: #FFFFFF;
 }
 #subtotal{
-    background-color: #EBE7D1;
+    background-color: #FFFFFF;
 }
 #tax-adjustments{
-    background-color: #EBE7D1;
+    background-color: #FFFFFF;
 }
 #order-charges{
-    background-color: #EBE7D1;
+    background-color: #FFFFFF;
 }
 #shipment-total{
-    background-color: #EBE7D1;
+    background-color: #FFFFFF;
 }
 #minicart{
-    background-color: #FAF6E3 !important;
+    background-color: #FFFFFF !important;
 }
 #minicart a{
     color:#C46E56 !important;
@@ -455,7 +464,6 @@ text-align: left !important;
 
 .navimage{
     padding-right: 5px;
-margin-left: -20px;
 }
 
 .productpricingdetails{
@@ -480,7 +488,7 @@ margin-left: -20px;
 #headerlink{
     margin-top: -31px;
 display: table;
-padding-left: 40px;
+padding-left: 50px;
 }
 .product-center::first-line{
         font-family: 'Knockout 30 A', 'Knockout 30 B';
@@ -490,4 +498,27 @@ padding-left: 40px;
     font-size: 1.5em;
         color: #3EB17C;
     line-height: 60px;
+}
+
+.well{
+    border: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.navbar-form{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.btn-default{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.logoimg{
+    width: 48px;
+}
+.cartimg{
+    width: 35px;
+}
+.table > tfoot > tr.warning > td{
+    background-color: #F4F4F4;
 }
