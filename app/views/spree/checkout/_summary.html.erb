@@ -33,7 +33,7 @@
     <% if order.checkout_steps.include?("delivery") && order.shipments.any? %>
       <tr data-hook="shipping_total">
         <td><%= Spree.t(:shipping_total) %>:</td>
-        <td colspan="1"><%= Spree::Money.new(order.shipments.to_a.sum(&:cost), currency: order.currency).to_html %></td>
+        <td colspan="1" class="lead"><%= Spree::Money.new(order.shipments.to_a.sum(&:cost), currency: order.currency).to_html %></td>
       </tr>
 
       <% if order.shipment_adjustments.exists? %>
@@ -41,7 +41,7 @@
           <% order.shipment_adjustments.promotion.eligible.group_by(&:label).each do |label, adjustments| %>
             <tr class="total">
               <td><%= label %>:</td>
-              <td colspan="1"><%= Spree::Money.new(adjustments.sum(&:amount), currency: order.currency).to_html %></td>
+              <td colspan="1" class="lead"><%= Spree::Money.new(adjustments.sum(&:amount), currency: order.currency).to_html %></td>
             </tr>
           <% end %>
         </tbody>
