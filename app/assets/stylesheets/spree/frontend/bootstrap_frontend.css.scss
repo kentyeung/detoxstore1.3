@@ -77,7 +77,22 @@ color: #F6EFD2;
 .btn-primary:hover{
     background-color: #C46E56;
     color: #FFFFFF;
-    border-color: #9a5441;
+    border-color: #C46E56;
+}
+.btn-primary:active{
+    background-color: #C46E56;
+    color: #FFFFFF;
+    border-color: #C46E56;
+}
+.btn-success:hover{
+    background-color: #3EB17C;
+    color: #FFFFFF;
+    border-color: #3EB17C;
+}
+.btn-success:active{
+    background-color: #3EB17C;
+    color: #FFFFFF;
+    border-color: #3EB17C;
 }
 .table > tbody > tr > td{
     vertical-align: middle;
@@ -522,4 +537,8 @@ box-shadow: none;
 }
 .table > tfoot > tr.warning > td{
     background-color: #F4F4F4;
+}
+
+.disabled-step {
+  opacity: .5;
 }
