@@ -48,7 +48,7 @@ color: #F6EFD2;
   .navbar {
     border: 0;
     margin-bottom: 0;
-      padding-top: 6px;
+      padding-top: 22px;
   }
 }
 #spree-footer {
@@ -156,6 +156,10 @@ color: #F6EFD2;
 .nav-justified, .nav-tabs.nav-justified{
     width: 60%;
     float: right;
+}
+.navbar-nav.navbar-right:last-child{
+    margin-right: -50px;
+    margin-top: -7px;
 }
 // -- Spree Layout Custom Rules -------------------------
 
@@ -466,6 +470,7 @@ text-align: left !important;
 #link-to-cart{
     padding-top: 6px;
     display: table;
+    padding-left: 5px;
 }
 #order_coupon_code{
     width: 130px;
@@ -481,7 +486,7 @@ text-align: left !important;
 }
 
 .navimage{
-    padding-right: 5px;
+    margin-right: 10px;
 }
 
 .productpricingdetails{
@@ -504,9 +509,8 @@ text-align: left !important;
     color: #C46E56 !important;
 }
 #headerlink{
-    margin-top: -31px;
-display: table;
-padding-left: 50px;
+display: inline-block;
+    margin-left: -2px;
 }
 .product-center::first-line{
         font-family: 'Knockout 30 A', 'Knockout 30 B';
@@ -532,10 +536,10 @@ box-shadow: none;
     border-color: #FFFFFF;
 }
 .logoimg{
-    width: 48px;
+    width: 40px;
 }
 .cartimg{
-    width: 35px;
+    width: 37px;
 }
 .table > tfoot > tr.warning > td{
     background-color: #F4F4F4;
