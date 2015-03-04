@@ -61,7 +61,7 @@
   <tbody data-hook>
     <% @order.line_items.each do |item| %>
       <tr data-hook="order_details_line_item_row" class="order_details_line_item">
-        <td data-hook="order_item_image">
+        <td data-hook="order_item_image" class="imgcenter">
           <% if item.variant.images.length == 0 %>
             <%= link_to mini_image(item.variant.product), item.variant.product %>
           <% else %>
