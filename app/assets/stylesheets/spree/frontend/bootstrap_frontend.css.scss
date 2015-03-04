@@ -161,6 +161,12 @@ color: #F6EFD2;
     margin-right: -50px;
     margin-top: -7px;
 }
+
+.footer-container{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100% !important;
+}
 // -- Spree Layout Custom Rules -------------------------
 
 //TODO, bug #6
@@ -547,4 +553,7 @@ box-shadow: none;
 
 .disabled-step {
   opacity: .5;
+}
+.linkclass {
+    color: #3EB17C;
 }
