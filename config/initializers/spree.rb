@@ -10,6 +10,7 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
     config.track_inventory_levels = false
     config.always_include_confirm_step = true
+    config.auto_capture = true
           if Rails.env.production? then
            #production. Store images on S3.
            # development will default to local storage
