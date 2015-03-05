@@ -3,13 +3,17 @@
 $icon-font-path: "../../bootstrap/";
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+html{
+    position:relative;
+    min-height: 100%;
+}
 body{
     background-color: #F4F4F4;
     font-size: 1.2em;
     line-height: 200%;
     font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    margin-bottom:30px;
 }
 h1{
     font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 800; font-style: normal;
@@ -49,12 +53,17 @@ color: #F6EFD2;
     border: 0;
     margin-bottom: 0;
       padding-top: 22px;
+      letter-spacing: 0.2em;
   }
 }
 #spree-footer {
   padding-top: $padding-base-horizontal;
   margin-top: $line-height-computed;
   color: #3E323B;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
     //box-shadow: 0px 500px 0px 500px #4A2F40;
 }
 .btn{
@@ -194,23 +203,23 @@ h6{
     //background: #4A2F40;
     margin-top: 75px;
     width: 100%;
+    font-size: .8em;
 }
 #product-description {
-    margin-top: 100px;
+    margin-top: 110px;
 }
 .product-center{
     margin-bottom: 30px;
 }
 
 #product-properties td{
-    font-family: 'Knockout 30 A', 'Knockout 30 B';
-    font-weight: 400;
+font-family: 'Gotham SSm A', 'Gotham SSm B';
+    font-weight: 500;
     font-style: normal;
-    text-transform: uppercase;
     border-top: none;
     padding: 0px;
-    color: #c46E56;
     font-size: 1.3em;
+    line-height: 30px;
 }
 
 #quantity {
@@ -228,19 +237,19 @@ h6{
 }
 .selling{
     font-size: 3em;
+    line-height: 40px;
 }
 #inside-product-cart-form{
     text-transform: uppercase;
+    margin-top: 30px;
 }
 .product-title{
-    font-family: 'Knockout 30 A', 'Knockout 30 B';
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 6em;
+font-family: 'Sentinel SSm A', 'Sentinel SSm B'; font-weight: 800; font-style: normal;
+    font-size: 3.6em;
     color: #3E323B;
     margin-bottom: 0px;
-    
+    letter-spacing: 0;
+    text-transform: none;
 }
 th{
     background-color: #3E323B !important;
@@ -416,6 +425,9 @@ border-bottom-right-radius: 5px;
     border-left: 1px solid #E6E6E6;
     border-right: 1px solid #E6E6E6;
 }
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 5px;
+}
 .panel-footer{
     background-color: #3E323B;
 }
@@ -498,6 +510,8 @@ text-align: left !important;
 
 .productpricingdetails{
     margin-top: -5px;
+    font-family: 'Knockout 30 A', 'Knockout 30 B'; font-weight: 400; font-style: normal;
+    font-size: 1.3em;
 }
 
 .adjustment td{
@@ -520,15 +534,13 @@ display: inline-block;
     margin-left: -2px;
 }
 .product-center::first-line{
-        font-family: 'Knockout 30 A', 'Knockout 30 B';
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 1.5em;
-        color: #3EB17C;
-    line-height: 60px;
+    font-size: 1.1em;   
+    color: #3EB17C;
+    line-height: 40px;
 }
-
+.product-right{
+    padding-left: 0px;
+}
 .well{
     border: none;
 -webkit-box-shadow: none;
