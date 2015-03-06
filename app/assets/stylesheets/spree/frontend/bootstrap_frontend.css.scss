@@ -228,7 +228,6 @@ font-family: 'Gotham SSm A', 'Gotham SSm B';
     border-bottom-left-radius: 4px;
 }
 #add-to-cart-button{
-    margin-top: 39px;
     text-transform: uppercase;
 }
 
@@ -241,7 +240,7 @@ font-family: 'Gotham SSm A', 'Gotham SSm B';
 }
 #inside-product-cart-form{
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .product-title{
 font-family: 'Sentinel SSm A', 'Sentinel SSm B'; font-weight: 800; font-style: normal;
@@ -250,6 +249,10 @@ font-family: 'Sentinel SSm A', 'Sentinel SSm B'; font-weight: 800; font-style: n
     margin-bottom: 0px;
     letter-spacing: 0;
     text-transform: none;
+}
+#product-image{
+    margin-left: 60px;
+    margin-top:-40px;
 }
 th{
     background-color: #3E323B !important;
@@ -370,7 +373,8 @@ th:only-child{
     margin-bottom: 20px;
 }
 .product-section-title{
-    margin-bottom: 10px
+    margin-bottom: 10px;
+        display: none;
 }
 .checkout-well{
     background-color: #3E323B;
